@@ -6,8 +6,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
-:root{--ink:#1d1d1f;--sec:#6e6e73;--line:#d2d2d7;--bg:#fff;--bg2:#f5f5f7;--blue:#0071e3;
- --mint:#30d158;--grad:linear-gradient(120deg,#30d158,#0071e3 55%,#7d5bff)}
+:root{--ink:#1d1d1f;--sec:#6e6e73;--line:#d2d2d7;--bg:#fff;--bg2:#f5f5f7;--blue:#0071e3}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 body{font-family:-apple-system,BlinkMacSystemFont,'Inter',"Segoe UI",Roboto,sans-serif;
@@ -16,18 +15,18 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Inter',"Segoe UI",Roboto,sans
 .nav{position:sticky;top:0;z-index:30;height:48px;backdrop-filter:saturate(180%) blur(20px);
  background:rgba(255,255,255,.8);border-bottom:1px solid rgba(0,0,0,.08)}
 .nav .in{max-width:1000px;margin:0 auto;height:100%;padding:0 22px;display:flex;align-items:center;gap:10px}
-.nav svg{width:22px;height:25px}
+.nav svg{width:21px;height:24px}
 .nav b{font-size:15px;font-weight:600}.nav span{color:var(--sec);font-size:15px;font-weight:400}
 .hero{background:var(--bg2);text-align:center;padding:84px 22px 72px}
-.eyebrow{color:var(--blue);font-weight:600;font-size:19px;margin-bottom:10px}
-.hero h1{font-size:clamp(48px,9vw,92px);font-weight:800;line-height:1.02;letter-spacing:-.03em}
-.hero h1 em{font-style:normal;background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.eyebrow{color:var(--sec);font-weight:600;font-size:19px;margin-bottom:10px}
+.hero h1{font-size:clamp(48px,9vw,92px);font-weight:700;line-height:1.03;letter-spacing:-.03em;color:var(--ink)}
+.hero h1 em{font-style:normal;color:var(--blue)}
 .hero p{max-width:620px;margin:20px auto 0;font-size:21px;color:var(--sec);line-height:1.45}
-.sub{color:var(--sec);font-size:13px;margin-top:18px}
+.sub{color:#86868b;font-size:13px;margin-top:18px}
 .specs{max-width:1000px;margin:0 auto;padding:60px 22px 20px;display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
-.spec{background:var(--bg2);border-radius:22px;padding:30px 26px;text-align:center;transition:transform .3s ease,box-shadow .3s ease}
-.spec:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(0,0,0,.08)}
-.spec .n{font-size:52px;font-weight:800;line-height:1;background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:-.04em}
+.spec{background:var(--bg2);border-radius:22px;padding:32px 26px;text-align:center;transition:transform .3s ease,box-shadow .3s ease}
+.spec:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(0,0,0,.09)}
+.spec .n{font-size:54px;font-weight:700;line-height:1;color:var(--ink);letter-spacing:-.04em}
 .spec h3{font-size:17px;font-weight:600;margin:14px 0 4px}
 .spec p{font-size:14px;color:var(--sec);line-height:1.4}
 .container{max-width:760px;margin:0 auto;padding:40px 22px 10px}
@@ -36,26 +35,25 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Inter',"Segoe UI",Roboto,sans
 .intro p{color:var(--sec);font-size:19px;margin-top:10px}
 .sec{padding:34px 0;border-bottom:1px solid var(--line)}
 .sec:last-child{border-bottom:0}
-.sec h3{font-size:24px;font-weight:700;letter-spacing:-.02em;margin-bottom:10px}
+.sec h3{font-size:24px;font-weight:600;letter-spacing:-.02em;margin-bottom:10px}
 .sec p{color:#333;font-size:17px;margin-bottom:12px}
 .sec ul{list-style:none;margin:4px 0 10px}
 .sec li{position:relative;padding-left:26px;margin-bottom:10px;color:#333}
-.sec li::before{content:"";position:absolute;left:3px;top:9px;width:8px;height:8px;border-radius:50%;background:var(--grad)}
+.sec li::before{content:"";position:absolute;left:4px;top:9px;width:7px;height:7px;border-radius:50%;background:var(--blue)}
 strong{font-weight:600;color:#000}
 code{font-family:ui-monospace,"SF Mono",Menlo,monospace;font-size:14px;background:#f1f1f4;border:1px solid var(--line);padding:2px 8px;border-radius:7px;color:#1d1d1f}
 .spectable{background:var(--bg2);border-radius:20px;overflow:hidden;margin:8px 0}
 .row{display:grid;grid-template-columns:200px 1fr;gap:16px;padding:18px 24px;border-bottom:1px solid var(--line)}
 .row:last-child{border-bottom:0}.row .k{font-weight:600;font-size:15px}.row .v{color:var(--sec);font-size:15px}
 a{color:var(--blue);text-decoration:none}a:hover{text-decoration:underline}
-footer{background:var(--bg2);color:var(--sec);font-size:12px;line-height:1.5;padding:30px 22px 48px;border-top:1px solid var(--line)}
-.fin{max-width:1000px;margin:0 auto}
-.fin b{color:var(--ink);font-size:13px}
+footer{background:var(--bg2);color:#86868b;font-size:12px;line-height:1.5;padding:30px 22px 48px;border-top:1px solid var(--line)}
+.fin{max-width:1000px;margin:0 auto}.fin b{color:var(--ink);font-size:13px}
 @media(max-width:820px){.specs{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:560px){.specs{grid-template-columns:1fr}.row{grid-template-columns:1fr;gap:4px}.hero{padding:60px 20px 50px}}
 </style></head>
 <body oncontextmenu="return false" ondragstart="return false">
 <div class="nav"><div class="in">
- <svg viewBox="0 0 40 46" fill="none"><path d="M20 1L37 7V22C37 32.5 29.5 42 20 45C10.5 42 3 32.5 3 22V7L20 1Z" fill="url(#g)"/><path d="M14 23l4.2 4.2L27 18" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><defs><linearGradient id="g" x1="3" y1="1" x2="37" y2="45" gradientUnits="userSpaceOnUse"><stop stop-color="#7d5bff"/><stop offset="1" stop-color="#0071e3"/></linearGradient></defs></svg>
+ <svg viewBox="0 0 40 46" fill="none"><path d="M20 1L37 7V22C37 32.5 29.5 42 20 45C10.5 42 3 32.5 3 22V7L20 1Z" fill="#1d1d1f"/><path d="M14 23l4.2 4.2L27 18" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
  <b>Quiet Web</b><span>·&nbsp;Privacy</span>
 </div></div>
 
@@ -75,7 +73,6 @@ footer{background:var(--bg2);color:var(--sec);font-size:12px;line-height:1.5;pad
 
 <div class="container">
  <div class="intro"><h2>The details.</h2><p>Everything, in plain terms.</p></div>
-
  <div class="sec"><h3>About this policy</h3><p>Quiet Web (the "Extension") is a content blocker that removes advertisements and trackers as you browse. This policy explains what data the Extension does and does not handle, and applies to the Extension only.</p></div>
  <div class="sec"><h3>Information we collect</h3><p>The Extension does <strong>not</strong> collect any personally identifiable information. It does not collect or transmit your name or contact details, the pages or URLs you visit, your browsing or search history, your IP address, device identifiers or location, or any analytics or telemetry. There are no accounts and no sign-in.</p></div>
  <div class="sec"><h3>How blocking works</h3><p>Blocking happens in two ways, both entirely on your device:</p>
