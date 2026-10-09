@@ -1,31 +1,115 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy Policy — Quiet Web</title>
+<meta name="description" content="Privacy policy for Quiet Web — Ad & Tracker Blocker for Google Chrome.">
 <meta name="robots" content="noai, noimageai"><meta name="referrer" content="no-referrer">
+<meta name="theme-color" content="#0a0e16">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#0b0f17;--panel:#111827;--hair:#1f2a3a;--text:#dbe4ee;--muted:#8696ab;--mint:#34d3a6;--blue:#3aa0ff}
-*{box-sizing:border-box}html,body{margin:0}body{background:radial-gradient(1100px 500px at 70% -10%,rgba(58,160,255,.10),transparent 60%),var(--bg);color:var(--text);font:16.5px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;-webkit-user-select:none;user-select:none}
-.wrap{max-width:720px;margin:0 auto;padding:54px 24px 80px}h1{font-size:25px;margin:0;font-weight:650}.sub{color:var(--muted);margin:2px 0 0;font-size:14.5px}
-.meta{color:var(--muted);font-size:12.5px;margin:20px 0 0}hr{height:2px;border:0;margin:20px 0 28px;background:linear-gradient(90deg,var(--mint),var(--blue) 55%,transparent)}
-.summary{background:var(--panel);border:1px solid var(--hair);border-radius:14px;padding:18px 20px;margin:0 0 30px}.summary h2{margin:0 0 8px;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--mint)}
-h2.sec{font-size:18px;margin:30px 0 10px}p{margin:0 0 14px}a{color:var(--blue)}strong{color:#fff}ul{margin:0 0 14px;padding-left:20px}li{margin:0 0 8px}
-code{font-family:ui-monospace,Menlo,monospace;font-size:13px;background:#0c1422;border:1px solid var(--hair);padding:1px 6px;border-radius:6px;color:#cfe3ff}
-footer{margin-top:44px;padding-top:20px;border-top:1px solid var(--hair);color:var(--muted);font-size:14px}
-</style></head><body oncontextmenu="return false" ondragstart="return false" oncopy="return false">
+:root{
+ --bg:#0a0e16;--bg2:#0e1420;--card:rgba(20,28,43,.65);--hair:rgba(255,255,255,.08);
+ --text:#e6edf6;--muted:#93a1b5;--dim:#6b7a90;--mint:#34d3a6;--blue:#4aa3ff;--purple:#8b7cff;
+ --grad:linear-gradient(100deg,#34d3a6,#4aa3ff 55%,#8b7cff);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+ font-family:'Inter',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+ color:var(--text);line-height:1.68;font-size:16.5px;letter-spacing:-.003em;
+ background:
+  radial-gradient(900px 480px at 82% -8%,rgba(139,124,255,.16),transparent 60%),
+  radial-gradient(760px 420px at 6% -4%,rgba(52,211,166,.14),transparent 58%),
+  radial-gradient(1100px 600px at 50% 120%,rgba(74,163,255,.10),transparent 60%),
+  var(--bg);
+ background-attachment:fixed;-webkit-font-smoothing:antialiased;
+ -webkit-user-select:none;user-select:none;
+}
+.bar{position:sticky;top:0;z-index:20;backdrop-filter:blur(14px);
+ background:rgba(10,14,22,.72);border-bottom:1px solid var(--hair)}
+.bar .in{max-width:860px;margin:0 auto;padding:14px 24px;display:flex;align-items:center;gap:12px}
+.logo{width:34px;height:34px;flex:none}
+.brand{font-weight:700;font-size:16px}
+.brand small{display:block;font-weight:500;color:var(--dim);font-size:11px;letter-spacing:.14em;text-transform:uppercase;margin-top:1px}
+.wrap{max-width:860px;margin:0 auto;padding:0 24px}
+.hero{padding:70px 0 34px;text-align:center}
+.pill{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:600;color:var(--mint);
+ background:rgba(52,211,166,.10);border:1px solid rgba(52,211,166,.22);padding:6px 14px;border-radius:999px;letter-spacing:.02em}
+.hero h1{font-size:clamp(34px,6vw,54px);font-weight:800;line-height:1.05;margin:22px 0 14px;letter-spacing:-.025em}
+.hero h1 span{background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.hero p{color:var(--muted);font-size:18px;max-width:560px;margin:0 auto}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin:40px 0 10px}
+.g{background:var(--card);border:1px solid var(--hair);border-radius:18px;padding:22px;backdrop-filter:blur(8px);transition:transform .25s,border-color .25s}
+.g:hover{transform:translateY(-3px);border-color:rgba(74,163,255,.35)}
+.g .ic{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;margin-bottom:14px;background:rgba(74,163,255,.12)}
+.g h3{font-size:16px;font-weight:700;margin-bottom:5px}
+.g p{color:var(--muted);font-size:14px;line-height:1.55}
+.card{background:var(--card);border:1px solid var(--hair);border-radius:22px;padding:14px 34px 40px;margin:44px 0 30px;backdrop-filter:blur(8px)}
+section{padding-top:30px}
+h2{font-size:21px;font-weight:700;letter-spacing:-.02em;margin:0 0 12px;padding-left:16px;position:relative}
+h2::before{content:"";position:absolute;left:0;top:4px;bottom:4px;width:4px;border-radius:4px;background:var(--grad)}
+p.body{color:#c7d2e0;margin-bottom:14px}
+ul{list-style:none;margin:6px 0 14px}
+li{position:relative;padding-left:26px;margin-bottom:11px;color:#c7d2e0}
+li::before{content:"";position:absolute;left:4px;top:11px;width:8px;height:8px;border-radius:3px;background:var(--grad)}
+strong{color:#fff;font-weight:600}
+code{font-family:ui-monospace,"SF Mono",Menlo,monospace;font-size:13px;background:rgba(74,163,255,.10);
+ border:1px solid rgba(74,163,255,.22);color:#a9d0ff;padding:2px 8px;border-radius:7px}
+.perm{display:grid;grid-template-columns:auto 1fr;gap:10px 18px;margin:10px 0 6px}
+.perm code{align-self:start;white-space:nowrap}
+.perm span{color:var(--muted);font-size:15px}
+a{color:var(--blue);text-decoration:none;border-bottom:1px solid rgba(74,163,255,.3)}
+a:hover{border-color:var(--blue)}
+.updated{color:var(--dim);font-size:13px;margin-top:8px}
+footer{text-align:center;color:var(--dim);font-size:13.5px;padding:34px 24px 70px;border-top:1px solid var(--hair);margin-top:30px}
+footer .f1{color:var(--muted);font-weight:600;margin-bottom:4px}
+@media(max-width:600px){.grid{grid-template-columns:1fr}.card{padding:10px 20px 30px;border-radius:18px}.hero{padding:48px 0 24px}}
+.logosvg{display:block}
+</style></head>
+<body oncontextmenu="return false" ondragstart="return false">
+<div class="bar"><div class="in">
+ <svg class="logo logosvg" viewBox="0 0 40 46" fill="none"><path d="M20 1L37 7V22C37 32.5 29.5 42 20 45C10.5 42 3 32.5 3 22V7L20 1Z" fill="url(#lg)"/><path d="M14 23l4.2 4.2L27 18" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><defs><linearGradient id="lg" x1="3" y1="1" x2="37" y2="45" gradientUnits="userSpaceOnUse"><stop stop-color="#8b7cff"/><stop offset="1" stop-color="#4aa3ff"/></linearGradient></defs></svg>
+ <div class="brand">Quiet Web<small>Privacy Policy</small></div>
+</div></div>
+
 <div class="wrap">
-<h1>Privacy Policy</h1><p class="sub">Quiet Web &mdash; Ad &amp; Tracker Blocker for Google Chrome</p>
-<p class="meta">Last updated: 9 October 2026</p><hr>
-<div class="summary"><h2>The short version</h2><p>Quiet Web does not collect, store, or transmit your personal information or your browsing history. All blocking happens locally in your browser; your settings stay on your device; nothing is sent to us or any third party.</p></div>
-<h2 class="sec">1. About this policy</h2><p>Quiet Web (the "Extension") is a content blocker that removes advertisements and trackers as you browse. This policy explains what data the Extension does and does not handle, and applies to the Extension only.</p>
-<h2 class="sec">2. Information we collect</h2><p>The Extension does <strong>not</strong> collect any personally identifiable information. It does not collect or transmit your name or contact details, the pages or URLs you visit, your browsing or search history, your IP address, device identifiers or location, or any analytics or telemetry. There are no accounts and no sign-in.</p>
-<h2 class="sec">3. How blocking works</h2><p>Blocking happens in two ways, both entirely on your device:</p><ul><li><strong>Network blocking</strong> uses Chrome's <code>declarativeNetRequest</code> API. Rules are supplied to the browser and Chrome decides which requests to block; the Extension does not read request contents or log the sites you visit.</li><li><strong>On-page filtering</strong> uses content scripts that run on pages you open to hide ad elements and neutralise "disable your ad blocker" walls. These read and modify the page in your browser only.</li></ul><p>No page content or browsing data is collected, stored remotely, or transmitted off your device.</p>
-<h2 class="sec">4. Local settings and statistics</h2><p>The Extension stores a small amount of data <strong>locally on your device</strong> via Chrome's storage API: your preferences (enabled modules, theme, popup size), your paused-site list, and a local "items blocked" counter shown in the popup. This never leaves your device and is removed on uninstall.</p>
-<h2 class="sec">5. Permissions</h2><ul><li><code>declarativeNetRequest</code> &mdash; apply the rules that block ad and tracker requests.</li><li><code>storage</code> &mdash; save your settings, paused-site list and block counter locally.</li><li><code>tabs</code> &mdash; read the active tab's address for per-site pause and redirect protection, and open the Extension's own info tab.</li><li><strong>Access to websites you visit</strong> &mdash; on-page filtering runs on sites you open to hide ads, used solely for blocking; nothing is collected.</li></ul>
-<h2 class="sec">6. Network connections and remote code</h2><p>Filter lists are <strong>bundled with the Extension</strong> and updated only when you install a new version from the Chrome Web Store. The Extension makes no runtime connection to any external server, loads no remote code, and sends no data over the network.</p>
-<h2 class="sec">7. Sharing and third parties</h2><p>Because no personal data is collected, there is nothing to share. We do not sell, rent, trade or transfer user data. There are no third-party analytics, advertising or tracking SDKs.</p>
-<h2 class="sec">8. Donations</h2><p>The Extension may display cryptocurrency wallet addresses for optional, voluntary donations. It does not process payments, record whether you donate, or collect any donation information.</p>
-<h2 class="sec">9. Children's privacy</h2><p>The Extension is general-purpose, not directed at children, and does not knowingly collect information from anyone.</p>
-<h2 class="sec">10. Changes</h2><p>Any update to this policy will be posted at this address with a revised date.</p>
-<h2 class="sec">11. Contact</h2><p>Questions: <a href="mailto:67ace67a@gmail.com">67ace67a@gmail.com</a>.</p>
-<h2 class="sec">12. Compliance</h2><p>The Extension complies with the <a href="https://developer.chrome.com/docs/webstore/program-policies" rel="noopener nofollow">Chrome Web Store Developer Program Policies</a>, including Limited Use. Data is used only to provide the single purpose &mdash; blocking ads and trackers &mdash; and is never transferred for advertising, sold, or used for any unrelated purpose.</p>
-<footer>Quiet Web &middot; Privacy Policy &middot; 9 October 2026 &middot; &copy; 2026 ProjectBergmannstrasse. All rights reserved.</footer>
-</div></body></html>
+ <div class="hero">
+  <div class="pill">● No data collected · everything stays on your device</div>
+  <h1>Your browsing is<br><span>yours alone.</span></h1>
+  <p>Quiet Web blocks ads and trackers entirely inside your browser. It has no accounts, no servers, and nothing to send.</p>
+  <div class="updated">Last updated 9 October 2026</div>
+ </div>
+
+ <div class="grid">
+  <div class="g"><div class="ic">🔒</div><h3>Nothing collected</h3><p>No names, no history, no IP, no identifiers — ever.</p></div>
+  <div class="g"><div class="ic">💻</div><h3>Runs locally</h3><p>All filtering happens on your device, in real time.</p></div>
+  <div class="g"><div class="ic">🚫</div><h3>No tracking</h3><p>Zero analytics, telemetry, or third-party SDKs.</p></div>
+  <div class="g"><div class="ic">📦</div><h3>No remote code</h3><p>Filter lists ship in the package. No server calls.</p></div>
+ </div>
+
+ <div class="card">
+  <section><h2>1. About this policy</h2><p class="body">Quiet Web (the "Extension") is a content blocker that removes advertisements and trackers as you browse. This policy explains what data the Extension does and does not handle, and applies to the Extension only.</p></section>
+  <section><h2>2. Information we collect</h2><p class="body">The Extension does <strong>not</strong> collect any personally identifiable information. It does not collect or transmit your name or contact details, the pages or URLs you visit, your browsing or search history, your IP address, device identifiers or location, or any analytics or telemetry. There are no accounts and no sign-in.</p></section>
+  <section><h2>3. How blocking works</h2><p class="body">Blocking happens in two ways, both entirely on your device:</p>
+   <ul><li><strong>Network blocking</strong> uses Chrome's <code>declarativeNetRequest</code> API. Rules are supplied to the browser and Chrome decides which requests to block; the Extension never reads request contents or logs the sites you visit.</li>
+   <li><strong>On-page filtering</strong> uses content scripts that run on pages you open to hide ad elements and neutralise "disable your ad blocker" walls. These read and modify the page in your browser only.</li></ul>
+   <p class="body">No page content or browsing data is collected, stored remotely, or transmitted off your device.</p></section>
+  <section><h2>4. Local settings &amp; statistics</h2><p class="body">The Extension stores a small amount of data <strong>locally on your device</strong> via Chrome's storage API — your preferences (enabled modules, theme, popup size), your paused-site list, and a local "items blocked" counter shown in the popup. This never leaves your device and is removed on uninstall.</p></section>
+  <section><h2>5. Permissions</h2>
+   <div class="perm">
+    <code>declarativeNetRequest</code><span>Apply the rules that block ad and tracker requests.</span>
+    <code>storage</code><span>Save your settings, paused-site list and block counter locally.</span>
+    <code>tabs</code><span>Read the active tab's address for per-site pause and redirect protection, and open the Extension's own info tab.</span>
+    <code>host&nbsp;access</code><span>On-page filtering runs on sites you open, solely to hide ads. Nothing is collected.</span>
+   </div></section>
+  <section><h2>6. Network connections &amp; remote code</h2><p class="body">Filter lists are <strong>bundled with the Extension</strong> and updated only when you install a new version from the Chrome Web Store. The Extension makes no runtime connection to any external server, loads no remote code, and sends no data over the network.</p></section>
+  <section><h2>7. Sharing &amp; third parties</h2><p class="body">Because no personal data is collected, there is nothing to share. We do not sell, rent, trade or transfer user data. There are no third-party analytics, advertising or tracking SDKs.</p></section>
+  <section><h2>8. Donations</h2><p class="body">The Extension may display cryptocurrency wallet addresses for optional, voluntary donations. It does not process payments, record whether you donate, or collect any donation information.</p></section>
+  <section><h2>9. Children's privacy</h2><p class="body">The Extension is general-purpose, not directed at children, and does not knowingly collect information from anyone.</p></section>
+  <section><h2>10. Changes</h2><p class="body">Any update to this policy will be posted at this address with a revised date.</p></section>
+  <section><h2>11. Contact</h2><p class="body">Questions? Email <a href="mailto:67ace67a@gmail.com">67ace67a@gmail.com</a>.</p></section>
+  <section><h2>12. Compliance</h2><p class="body">The Extension complies with the <a href="https://developer.chrome.com/docs/webstore/program-policies" rel="noopener nofollow">Chrome Web Store Developer Program Policies</a>, including Limited Use. Data is used only to provide the single purpose — blocking ads and trackers — and is never transferred for advertising, sold, or used for any unrelated purpose.</p></section>
+ </div>
+</div>
+<footer><div class="f1">Quiet Web — Ad &amp; Tracker Blocker</div>Privacy Policy · 9 October 2026 · © 2026 ProjectBergmannstrasse. All rights reserved.</footer>
+</body></html>
